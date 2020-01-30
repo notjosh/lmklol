@@ -95,17 +95,37 @@ const lmklol = async () => {
     const watchable = data.trakt[0];
 
     let title: string | null = null;
+    let url: string | null = null;
+
+    const traktor = (slug: string | undefined): string | null => {
+      if (slug == null) {
+        return null;
+      }
+
+      return `https://trakt.tv/shows/${slug}`;
+    };
 
     if (watchable.show != null) {
       title = watchable.show.title;
+
+      if (watchable.show.ids != null) {
+        url = traktor(watchable.show.ids.slug);
+      }
     }
 
     if (watchable.movie != null) {
       title = watchable.movie.title;
+
+      if (watchable.show.ids != null) {
+        url = traktor(watchable.movie.ids.slug);
+      }
     }
 
-    if (title != null) {
-      points.watched = title;
+    if (title != null && url != null) {
+      points.watched = {
+        title,
+        url,
+      };
     }
   }
 
@@ -221,7 +241,10 @@ const lmklol = async () => {
 
     if (points.watched != null) {
       lines.push(
-        `the last thing i watched was <a target="_blank" data-background="14lol.gif" href="https://trakt.tv/users/lmk">${points.watched}</a>`
+        `the last thing i watched was <a target="_blank" data-background="14lol.gif" href="${points
+          .watched.url || 'https://trakt.tv/users/lmk'}">${
+          points.watched.title
+        }</a>`
       );
     }
 
