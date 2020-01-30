@@ -169,16 +169,16 @@ const lmklol = async () => {
   // --- sentence construction
 
   let words = '';
-  words += `it's <a style="cursor:default;" data-background="01lol.gif">${points.time}</a> `;
+  words += `it's <a style="cursor:default;" data-background="img/01lol.gif">${points.time}</a> `;
   if (points.location_name != null) {
-    words += `here in <a target="_blank" data-background="04lol.gif" href="#">${points.location_name}</a>`;
+    words += `here in <a target="_blank" data-background="img/04lol.gif" href="#">${points.location_name}</a>`;
   } else {
     words +=
-      'probably in <a target="_blank" data-background="04lol.gif" href="#">melbourne</a>';
+      'probably in <a target="_blank" data-background="img/04lol.gif" href="#">melbourne</a>';
   }
 
   if (points.weather_temp_max != null && points.weather_temp_min != null) {
-    words += `, which is <a target="_blank" data-background="02lol.gif" href="#">${points.weather_temp_min}°-${points.weather_temp_max}°`;
+    words += `, which is <a target="_blank" data-background="img/02lol.gif" href="#">${points.weather_temp_min}°-${points.weather_temp_max}°`;
 
     if (points.weather != null) {
       words += ` and ${points.weather}`;
@@ -194,7 +194,7 @@ const lmklol = async () => {
     let lines: string[] = [];
 
     if (points.song_name != null) {
-      let line = `the last song i listened to was <a target="_blank" data-background="05lol.gif" href="https://www.last.fm/user/lemikizu">${points.song_name}`;
+      let line = `the last song i listened to was <a target="_blank" data-background="img/05lol.gif" href="https://www.last.fm/user/lemikizu">${points.song_name}`;
 
       if (points.song_artist != null) {
         line += ` by ${points.song_artist}`;
@@ -207,13 +207,13 @@ const lmklol = async () => {
 
     if (points.watched != null) {
       lines.push(
-        `the last thing i watched was <a target="_blank" data-background="14lol.gif" href="https://trakt.tv/users/lmk">${points.watched}</a>`
+        `the last thing i watched was <a target="_blank" data-background="img/14lol.gif" href="https://trakt.tv/users/lmk">${points.watched}</a>`
       );
     }
 
     if (points.steam_game_name != null && points.steam_game_appid != null) {
       lines.push(
-        `the last game i played was <a target="_blank" data-background="14lol.gif" href="https://store.steampowered.com/app/${points.steam_game_appid}/">${points.steam_game_name}</a>`
+        `the last game i played was <a target="_blank" data-background="img/14lol.gif" href="https://store.steampowered.com/app/${points.steam_game_appid}/">${points.steam_game_name}</a>`
       );
     }
 
@@ -241,7 +241,7 @@ const lmklol = async () => {
     words += 'yesterday ';
 
     if (points.productivity != null) {
-      words += `i was <a style="cursor:default;" data-background="03lol.gif">${points.productivity}% productive</a>`;
+      words += `i was <a style="cursor:default;" data-background="img/03lol.gif">${points.productivity}% productive</a>`;
 
       if (points.steps_formatted != null) {
         words += ' and ';
@@ -249,7 +249,7 @@ const lmklol = async () => {
     }
 
     if (points.steps_formatted != null) {
-      words += `i took <a style="cursor:default;" data-background="06lol.gif">${points.steps_formatted}</a> steps`;
+      words += `i took <a style="cursor:default;" data-background="img/06lol.gif">${points.steps_formatted}</a> steps`;
 
       if (points.sleep_in_words != null) {
         words += ' ';
@@ -263,7 +263,7 @@ const lmklol = async () => {
         words += 'before sleeping';
       }
 
-      words += ` for <a style="cursor:default;" data-background="07lol.gif">${points.sleep_in_words}</a>`;
+      words += ` for <a style="cursor:default;" data-background="img/07lol.gif">${points.sleep_in_words}</a>`;
     }
 
     words += '.';
