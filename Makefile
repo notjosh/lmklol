@@ -22,6 +22,9 @@ run-bundle:
 		})() \
 	"
 
+bootstrap:
+	yarn
+
 deploy:
 	aws lambda update-function-code --function-name lmklol --zip-file fileb://./dist/dist.zip
 

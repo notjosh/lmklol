@@ -11,6 +11,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: bootstrap project
+        run: make bootstrap
       - name: build bundle
         run: make bundle
       - name: deploy to aws
