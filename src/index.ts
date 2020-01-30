@@ -1,7 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-import _ from 'lodash';
 import numeral from 'numeral';
 import { DateTime } from 'luxon';
 import humanizeDuration from 'humanize-duration';
