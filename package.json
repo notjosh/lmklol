@@ -1,0 +1,26 @@
+{
+  "name": "lmklol",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/humanize-duration": "^3.18.0",
+    "@types/lodash": "^4.14.149",
+    "@types/luxon": "^1.21.0",
+    "@types/node": "^13.1.8",
+    "@types/numeral": "^0.0.26",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "got": "^10.3.0",
+    "humanize-duration": "^3.21.0",
+    "keyv": "^4.0.0",
+    "keyv-file": "^0.1.13",
+    "lodash": "^4.17.15",
+    "luxon": "^1.22.0",
+    "numeral": "^2.0.6"
+  }
+}

@@ -1,0 +1,902 @@
+[
+  {
+    "group": { "name": "activity", "label": "Activity", "priority": 1 },
+    "attribute": "steps",
+    "label": "Steps",
+    "private": true,
+    "priority": 1,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Exist for iOS",
+    "values": [
+      { "value": 84, "date": "2020-01-30" },
+      { "value": 1396, "date": "2020-01-29" },
+      { "value": 7117, "date": "2020-01-28" },
+      { "value": 689, "date": "2020-01-27" },
+      { "value": 1945, "date": "2020-01-26" },
+      { "value": 6034, "date": "2020-01-25" },
+      { "value": 1116, "date": "2020-01-24" },
+      { "value": null, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "activity", "label": "Activity", "priority": 1 },
+    "attribute": "steps_active_min",
+    "label": "Active minutes",
+    "private": true,
+    "priority": 2,
+    "value_type": 3,
+    "value_type_description": "Period (min)",
+    "service": "Exist for iOS",
+    "values": [
+      { "value": null, "date": "2020-01-30" },
+      { "value": 5, "date": "2020-01-29" },
+      { "value": 45, "date": "2020-01-28" },
+      { "value": 5, "date": "2020-01-27" },
+      { "value": 6, "date": "2020-01-26" },
+      { "value": 36, "date": "2020-01-25" },
+      { "value": 3, "date": "2020-01-24" },
+      { "value": null, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "activity", "label": "Activity", "priority": 1 },
+    "attribute": "floors",
+    "label": "Floors",
+    "private": true,
+    "priority": 3,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Exist for iOS",
+    "values": [
+      { "value": null, "date": "2020-01-30" },
+      { "value": 2, "date": "2020-01-29" },
+      { "value": 9, "date": "2020-01-28" },
+      { "value": 2, "date": "2020-01-27" },
+      { "value": 2, "date": "2020-01-26" },
+      { "value": 11, "date": "2020-01-25" },
+      { "value": 2, "date": "2020-01-24" },
+      { "value": null, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "activity", "label": "Activity", "priority": 1 },
+    "attribute": "steps_distance",
+    "label": "Distance",
+    "private": true,
+    "priority": 10,
+    "value_type": 1,
+    "value_type_description": "Float",
+    "service": "Exist for iOS",
+    "values": [
+      { "value": 0.06, "date": "2020-01-30" },
+      { "value": 1.04, "date": "2020-01-29" },
+      { "value": 5.45, "date": "2020-01-28" },
+      { "value": 0.49, "date": "2020-01-27" },
+      { "value": 1.44, "date": "2020-01-26" },
+      { "value": 4.62, "date": "2020-01-25" },
+      { "value": 0.82, "date": "2020-01-24" },
+      { "value": null, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "activity", "label": "Activity", "priority": 1 },
+    "attribute": "floors_goal",
+    "label": "Floors goal",
+    "private": false,
+    "priority": 11,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Built-ins",
+    "values": [
+      { "value": 13, "date": "2020-01-30" },
+      { "value": 8, "date": "2020-01-29" },
+      { "value": 4, "date": "2020-01-28" },
+      { "value": 8, "date": "2020-01-27" },
+      { "value": 4, "date": "2020-01-26" },
+      { "value": 4, "date": "2020-01-25" },
+      { "value": 3, "date": "2020-01-24" },
+      { "value": 13, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "activity", "label": "Activity", "priority": 1 },
+    "attribute": "steps_goal",
+    "label": "Steps goal",
+    "private": false,
+    "priority": 11,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Built-ins",
+    "values": [
+      { "value": 767, "date": "2020-01-30" },
+      { "value": 3981, "date": "2020-01-29" },
+      { "value": 3335, "date": "2020-01-28" },
+      { "value": 1743, "date": "2020-01-27" },
+      { "value": 1641, "date": "2020-01-26" },
+      { "value": 1900, "date": "2020-01-25" },
+      { "value": 4244, "date": "2020-01-24" },
+      { "value": 767, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "productivity", "label": "Productivity", "priority": 2 },
+    "attribute": "productive_min",
+    "label": "Productive time",
+    "private": false,
+    "priority": 1,
+    "value_type": 3,
+    "value_type_description": "Period (min)",
+    "service": "RescueTime",
+    "values": [
+      { "value": 8, "date": "2020-01-30" },
+      { "value": 445, "date": "2020-01-29" },
+      { "value": 333, "date": "2020-01-28" },
+      { "value": 18, "date": "2020-01-27" },
+      { "value": 150, "date": "2020-01-26" },
+      { "value": 25, "date": "2020-01-25" },
+      { "value": 1, "date": "2020-01-24" },
+      { "value": 198, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "productivity", "label": "Productivity", "priority": 2 },
+    "attribute": "distracting_min",
+    "label": "Distracting time",
+    "private": false,
+    "priority": 3,
+    "value_type": 3,
+    "value_type_description": "Period (min)",
+    "service": "RescueTime",
+    "values": [
+      { "value": 46, "date": "2020-01-30" },
+      { "value": 251, "date": "2020-01-29" },
+      { "value": 133, "date": "2020-01-28" },
+      { "value": 90, "date": "2020-01-27" },
+      { "value": 170, "date": "2020-01-26" },
+      { "value": 222, "date": "2020-01-25" },
+      { "value": 102, "date": "2020-01-24" },
+      { "value": 51, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "productivity", "label": "Productivity", "priority": 2 },
+    "attribute": "neutral_min",
+    "label": "Neutral time",
+    "private": false,
+    "priority": 10,
+    "value_type": 3,
+    "value_type_description": "Period (min)",
+    "service": "RescueTime",
+    "values": [
+      { "value": 8, "date": "2020-01-30" },
+      { "value": 199, "date": "2020-01-29" },
+      { "value": 180, "date": "2020-01-28" },
+      { "value": 36, "date": "2020-01-27" },
+      { "value": 24, "date": "2020-01-26" },
+      { "value": 40, "date": "2020-01-25" },
+      { "value": 15, "date": "2020-01-24" },
+      { "value": 14, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "productivity", "label": "Productivity", "priority": 2 },
+    "attribute": "productive_min_goal",
+    "label": "Productive min goal",
+    "private": false,
+    "priority": 10,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Built-ins",
+    "values": [
+      { "value": 83, "date": "2020-01-30" },
+      { "value": 107, "date": "2020-01-29" },
+      { "value": 121, "date": "2020-01-28" },
+      { "value": 107, "date": "2020-01-27" },
+      { "value": 22, "date": "2020-01-26" },
+      { "value": 10, "date": "2020-01-25" },
+      { "value": 23, "date": "2020-01-24" },
+      { "value": 64, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "sleep", "label": "Sleep", "priority": 3 },
+    "attribute": "sleep",
+    "label": "Time asleep",
+    "private": true,
+    "priority": 1,
+    "value_type": 3,
+    "value_type_description": "Period (min)",
+    "service": "Exist for iOS",
+    "values": [
+      { "value": 255, "date": "2020-01-30" },
+      { "value": null, "date": "2020-01-29" },
+      { "value": null, "date": "2020-01-28" },
+      { "value": null, "date": "2020-01-27" },
+      { "value": null, "date": "2020-01-26" },
+      { "value": null, "date": "2020-01-25" },
+      { "value": null, "date": "2020-01-24" },
+      { "value": null, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "workouts", "label": "Workouts", "priority": 3 },
+    "attribute": "workouts",
+    "label": "Workouts",
+    "private": true,
+    "priority": 1,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Exist for iOS",
+    "values": [
+      { "value": null, "date": "2020-01-30" },
+      { "value": null, "date": "2020-01-29" },
+      { "value": null, "date": "2020-01-28" },
+      { "value": null, "date": "2020-01-27" },
+      { "value": null, "date": "2020-01-26" },
+      { "value": null, "date": "2020-01-25" },
+      { "value": null, "date": "2020-01-24" },
+      { "value": null, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "sleep", "label": "Sleep", "priority": 3 },
+    "attribute": "time_in_bed",
+    "label": "Time in bed",
+    "private": true,
+    "priority": 2,
+    "value_type": 3,
+    "value_type_description": "Period (min)",
+    "service": "Exist for iOS",
+    "values": [
+      { "value": 255, "date": "2020-01-30" },
+      { "value": null, "date": "2020-01-29" },
+      { "value": null, "date": "2020-01-28" },
+      { "value": null, "date": "2020-01-27" },
+      { "value": null, "date": "2020-01-26" },
+      { "value": null, "date": "2020-01-25" },
+      { "value": null, "date": "2020-01-24" },
+      { "value": null, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "workouts", "label": "Workouts", "priority": 3 },
+    "attribute": "workouts_distance",
+    "label": "Workout distance",
+    "private": true,
+    "priority": 2,
+    "value_type": 1,
+    "value_type_description": "Float",
+    "service": "Exist for iOS",
+    "values": [
+      { "value": null, "date": "2020-01-30" },
+      { "value": null, "date": "2020-01-29" },
+      { "value": null, "date": "2020-01-28" },
+      { "value": null, "date": "2020-01-27" },
+      { "value": null, "date": "2020-01-26" },
+      { "value": null, "date": "2020-01-25" },
+      { "value": null, "date": "2020-01-24" },
+      { "value": null, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "workouts", "label": "Workouts", "priority": 3 },
+    "attribute": "workouts_min",
+    "label": "Workout time",
+    "private": true,
+    "priority": 2,
+    "value_type": 3,
+    "value_type_description": "Period (min)",
+    "service": "Exist for iOS",
+    "values": [
+      { "value": null, "date": "2020-01-30" },
+      { "value": null, "date": "2020-01-29" },
+      { "value": null, "date": "2020-01-28" },
+      { "value": null, "date": "2020-01-27" },
+      { "value": null, "date": "2020-01-26" },
+      { "value": null, "date": "2020-01-25" },
+      { "value": null, "date": "2020-01-24" },
+      { "value": null, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "sleep", "label": "Sleep", "priority": 3 },
+    "attribute": "sleep_start",
+    "label": "Bedtime",
+    "private": true,
+    "priority": 4,
+    "value_type": 6,
+    "value_type_description": "Time of day (min from midday)",
+    "service": "Exist for iOS",
+    "values": [
+      { "value": 780, "date": "2020-01-30" },
+      { "value": null, "date": "2020-01-29" },
+      { "value": null, "date": "2020-01-28" },
+      { "value": null, "date": "2020-01-27" },
+      { "value": null, "date": "2020-01-26" },
+      { "value": null, "date": "2020-01-25" },
+      { "value": null, "date": "2020-01-24" },
+      { "value": null, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "sleep", "label": "Sleep", "priority": 3 },
+    "attribute": "sleep_end",
+    "label": "Wake time",
+    "private": true,
+    "priority": 5,
+    "value_type": 4,
+    "value_type_description": "Time of day (min from midnight)",
+    "service": "Exist for iOS",
+    "values": [
+      { "value": 315, "date": "2020-01-30" },
+      { "value": null, "date": "2020-01-29" },
+      { "value": null, "date": "2020-01-28" },
+      { "value": null, "date": "2020-01-27" },
+      { "value": null, "date": "2020-01-26" },
+      { "value": null, "date": "2020-01-25" },
+      { "value": null, "date": "2020-01-24" },
+      { "value": null, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "sleep", "label": "Sleep", "priority": 3 },
+    "attribute": "sleep_goal",
+    "label": "Time asleep goal",
+    "private": false,
+    "priority": 10,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Built-ins",
+    "values": [
+      { "value": 375, "date": "2020-01-30" },
+      { "value": 375, "date": "2020-01-29" },
+      { "value": 390, "date": "2020-01-28" },
+      { "value": 0, "date": "2020-01-27" },
+      { "value": 0, "date": "2020-01-26" },
+      { "value": 0, "date": "2020-01-25" },
+      { "value": 0, "date": "2020-01-24" },
+      { "value": 375, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "events", "label": "Events", "priority": 4 },
+    "attribute": "events",
+    "label": "Events",
+    "private": false,
+    "priority": 1,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Calendar",
+    "values": [
+      { "value": 0, "date": "2020-01-30" },
+      { "value": 0, "date": "2020-01-29" },
+      { "value": 0, "date": "2020-01-28" },
+      { "value": 2, "date": "2020-01-27" },
+      { "value": 1, "date": "2020-01-26" },
+      { "value": 2, "date": "2020-01-25" },
+      { "value": 1, "date": "2020-01-24" },
+      { "value": 1, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "health", "label": "Health", "priority": 4 },
+    "attribute": "weight",
+    "label": "Weight",
+    "private": true,
+    "priority": 1,
+    "value_type": 1,
+    "value_type_description": "Float",
+    "service": "Exist for iOS",
+    "values": [
+      { "value": null, "date": "2020-01-30" },
+      { "value": null, "date": "2020-01-29" },
+      { "value": null, "date": "2020-01-28" },
+      { "value": null, "date": "2020-01-27" },
+      { "value": null, "date": "2020-01-26" },
+      { "value": null, "date": "2020-01-25" },
+      { "value": null, "date": "2020-01-24" },
+      { "value": null, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "events", "label": "Events", "priority": 4 },
+    "attribute": "events_duration",
+    "label": "Time in events",
+    "private": false,
+    "priority": 2,
+    "value_type": 3,
+    "value_type_description": "Period (min)",
+    "service": "Calendar",
+    "values": [
+      { "value": 0, "date": "2020-01-30" },
+      { "value": 0, "date": "2020-01-29" },
+      { "value": 0, "date": "2020-01-28" },
+      { "value": 420, "date": "2020-01-27" },
+      { "value": 599, "date": "2020-01-26" },
+      { "value": 390, "date": "2020-01-25" },
+      { "value": 630, "date": "2020-01-24" },
+      { "value": 329, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "health", "label": "Health", "priority": 4 },
+    "attribute": "heartrate",
+    "label": "Average heartrate",
+    "private": true,
+    "priority": 3,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Exist for iOS",
+    "values": [
+      { "value": null, "date": "2020-01-30" },
+      { "value": null, "date": "2020-01-29" },
+      { "value": null, "date": "2020-01-28" },
+      { "value": null, "date": "2020-01-27" },
+      { "value": null, "date": "2020-01-26" },
+      { "value": null, "date": "2020-01-25" },
+      { "value": null, "date": "2020-01-24" },
+      { "value": null, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "social", "label": "Social", "priority": 5 },
+    "attribute": "instagram_posts",
+    "label": "Instagram posts",
+    "private": false,
+    "priority": 1,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Instagram",
+    "values": [
+      { "value": 0, "date": "2020-01-30" },
+      { "value": 0, "date": "2020-01-29" },
+      { "value": 0, "date": "2020-01-28" },
+      { "value": 0, "date": "2020-01-27" },
+      { "value": 0, "date": "2020-01-26" },
+      { "value": 0, "date": "2020-01-25" },
+      { "value": 0, "date": "2020-01-24" },
+      { "value": 0, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "media", "label": "Media", "priority": 5 },
+    "attribute": "tracks",
+    "label": "Tracks played",
+    "private": false,
+    "priority": 1,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Last.fm",
+    "values": [
+      { "value": 2, "date": "2020-01-30" },
+      { "value": 5, "date": "2020-01-29" },
+      { "value": 0, "date": "2020-01-28" },
+      { "value": 0, "date": "2020-01-27" },
+      { "value": 0, "date": "2020-01-26" },
+      { "value": 61, "date": "2020-01-25" },
+      { "value": 0, "date": "2020-01-24" },
+      { "value": 68, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "social", "label": "Social", "priority": 5 },
+    "attribute": "instagram_likes",
+    "label": "Instagram likes",
+    "private": false,
+    "priority": 2,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Instagram",
+    "values": [
+      { "value": 0, "date": "2020-01-30" },
+      { "value": 0, "date": "2020-01-29" },
+      { "value": 0, "date": "2020-01-28" },
+      { "value": 0, "date": "2020-01-27" },
+      { "value": 0, "date": "2020-01-26" },
+      { "value": 0, "date": "2020-01-25" },
+      { "value": 0, "date": "2020-01-24" },
+      { "value": 0, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "social", "label": "Social", "priority": 5 },
+    "attribute": "instagram_comments",
+    "label": "Instagram comments",
+    "private": false,
+    "priority": 3,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Instagram",
+    "values": [
+      { "value": 0, "date": "2020-01-30" },
+      { "value": 0, "date": "2020-01-29" },
+      { "value": 0, "date": "2020-01-28" },
+      { "value": 0, "date": "2020-01-27" },
+      { "value": 0, "date": "2020-01-26" },
+      { "value": 0, "date": "2020-01-25" },
+      { "value": 0, "date": "2020-01-24" },
+      { "value": 0, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "social", "label": "Social", "priority": 5 },
+    "attribute": "facebook_posts",
+    "label": "Facebook posts",
+    "private": false,
+    "priority": 4,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Facebook",
+    "values": [
+      { "value": 0, "date": "2020-01-30" },
+      { "value": 0, "date": "2020-01-29" },
+      { "value": 0, "date": "2020-01-28" },
+      { "value": 0, "date": "2020-01-27" },
+      { "value": 0, "date": "2020-01-26" },
+      { "value": 0, "date": "2020-01-25" },
+      { "value": 0, "date": "2020-01-24" },
+      { "value": 0, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "social", "label": "Social", "priority": 5 },
+    "attribute": "facebook_reactions",
+    "label": "Facebook reactions",
+    "private": false,
+    "priority": 5,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Facebook",
+    "values": [
+      { "value": 0, "date": "2020-01-30" },
+      { "value": 0, "date": "2020-01-29" },
+      { "value": 0, "date": "2020-01-28" },
+      { "value": 0, "date": "2020-01-27" },
+      { "value": 0, "date": "2020-01-26" },
+      { "value": 0, "date": "2020-01-25" },
+      { "value": 0, "date": "2020-01-24" },
+      { "value": 0, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "twitter", "label": "Twitter", "priority": 5 },
+    "attribute": "tweets",
+    "label": "Tweets",
+    "private": false,
+    "priority": 5,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Twitter",
+    "values": [
+      { "value": 0, "date": "2020-01-30" },
+      { "value": 0, "date": "2020-01-29" },
+      { "value": 11, "date": "2020-01-28" },
+      { "value": 0, "date": "2020-01-27" },
+      { "value": 0, "date": "2020-01-26" },
+      { "value": 0, "date": "2020-01-25" },
+      { "value": 0, "date": "2020-01-24" },
+      { "value": 0, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "social", "label": "Social", "priority": 5 },
+    "attribute": "facebook_comments",
+    "label": "Facebook comments",
+    "private": false,
+    "priority": 6,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Facebook",
+    "values": [
+      { "value": 0, "date": "2020-01-30" },
+      { "value": 0, "date": "2020-01-29" },
+      { "value": 0, "date": "2020-01-28" },
+      { "value": 0, "date": "2020-01-27" },
+      { "value": 0, "date": "2020-01-26" },
+      { "value": 0, "date": "2020-01-25" },
+      { "value": 0, "date": "2020-01-24" },
+      { "value": 0, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "twitter", "label": "Twitter", "priority": 5 },
+    "attribute": "twitter_mentions",
+    "label": "Twitter mentions",
+    "private": false,
+    "priority": 6,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Twitter",
+    "values": [
+      { "value": 0, "date": "2020-01-30" },
+      { "value": 8, "date": "2020-01-29" },
+      { "value": 17, "date": "2020-01-28" },
+      { "value": 0, "date": "2020-01-27" },
+      { "value": 0, "date": "2020-01-26" },
+      { "value": 0, "date": "2020-01-25" },
+      { "value": 0, "date": "2020-01-24" },
+      { "value": 0, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "social", "label": "Social", "priority": 5 },
+    "attribute": "instagram_username",
+    "label": "Instagram username",
+    "private": false,
+    "priority": 10,
+    "value_type": 2,
+    "value_type_description": "String",
+    "service": "Instagram",
+    "values": [
+      { "value": "notlmk", "date": "2020-01-30" },
+      { "value": "notlmk", "date": "2020-01-29" },
+      { "value": "notlmk", "date": "2020-01-28" },
+      { "value": "notlmk", "date": "2020-01-27" },
+      { "value": "notlmk", "date": "2020-01-26" },
+      { "value": "notlmk", "date": "2020-01-25" },
+      { "value": "notlmk", "date": "2020-01-24" },
+      { "value": "notlmk", "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "location", "label": "Location", "priority": 5 },
+    "attribute": "location",
+    "label": "Location",
+    "private": true,
+    "priority": 10,
+    "value_type": 2,
+    "value_type_description": "String",
+    "service": "Exist for iOS",
+    "values": [
+      { "value": "-37.812408,145.251971", "date": "2020-01-30" },
+      { "value": null, "date": "2020-01-29" },
+      { "value": null, "date": "2020-01-28" },
+      { "value": null, "date": "2020-01-27" },
+      { "value": null, "date": "2020-01-26" },
+      { "value": null, "date": "2020-01-25" },
+      { "value": null, "date": "2020-01-24" },
+      { "value": null, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "location", "label": "Location", "priority": 5 },
+    "attribute": "location_name",
+    "label": "Location name",
+    "private": false,
+    "priority": 10,
+    "value_type": 2,
+    "value_type_description": "String",
+    "service": "Built-ins",
+    "values": [
+      { "value": "Carlton", "date": "2020-01-30" },
+      { "value": "Carlton", "date": "2020-01-29" },
+      { "value": "Carlton", "date": "2020-01-28" },
+      { "value": "Carlton", "date": "2020-01-27" },
+      { "value": "Carlton", "date": "2020-01-26" },
+      { "value": "Carlton", "date": "2020-01-25" },
+      { "value": "Carlton", "date": "2020-01-24" },
+      { "value": "Carlton", "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "twitter", "label": "Twitter", "priority": 5 },
+    "attribute": "twitter_username",
+    "label": "Twitter username",
+    "private": false,
+    "priority": 10,
+    "value_type": 2,
+    "value_type_description": "String",
+    "service": "Twitter",
+    "values": [
+      { "value": "twitchytvapp", "date": "2020-01-30" },
+      { "value": "twitchytvapp", "date": "2020-01-29" },
+      { "value": "twitchytvapp", "date": "2020-01-28" },
+      { "value": "twitchytvapp", "date": "2020-01-27" },
+      { "value": "twitchytvapp", "date": "2020-01-26" },
+      { "value": "twitchytvapp", "date": "2020-01-25" },
+      { "value": "twitchytvapp", "date": "2020-01-24" },
+      { "value": "twitchytvapp", "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "weather", "label": "Weather", "priority": 9 },
+    "attribute": "weather_temp_max",
+    "label": "Max temp",
+    "private": false,
+    "priority": 1,
+    "value_type": 1,
+    "value_type_description": "Float",
+    "service": "Dark Sky",
+    "values": [
+      { "value": 37.1, "date": "2020-01-30" },
+      { "value": 28.9, "date": "2020-01-29" },
+      { "value": 25.1, "date": "2020-01-28" },
+      { "value": 23.3, "date": "2020-01-27" },
+      { "value": 24.8, "date": "2020-01-26" },
+      { "value": 26.8, "date": "2020-01-25" },
+      { "value": 23.2, "date": "2020-01-24" },
+      { "value": 21.0, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "weather", "label": "Weather", "priority": 9 },
+    "attribute": "weather_temp_min",
+    "label": "Min temp",
+    "private": false,
+    "priority": 2,
+    "value_type": 1,
+    "value_type_description": "Float",
+    "service": "Dark Sky",
+    "values": [
+      { "value": 17.8, "date": "2020-01-30" },
+      { "value": 15.6, "date": "2020-01-29" },
+      { "value": 13.9, "date": "2020-01-28" },
+      { "value": 13.4, "date": "2020-01-27" },
+      { "value": 15.8, "date": "2020-01-26" },
+      { "value": 14.7, "date": "2020-01-25" },
+      { "value": 12.3, "date": "2020-01-24" },
+      { "value": 14.6, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "weather", "label": "Weather", "priority": 9 },
+    "attribute": "weather_precipitation",
+    "label": "Precipitation",
+    "private": false,
+    "priority": 7,
+    "value_type": 1,
+    "value_type_description": "Float",
+    "service": "Dark Sky",
+    "values": [
+      { "value": 0.0, "date": "2020-01-30" },
+      { "value": 0.01, "date": "2020-01-29" },
+      { "value": 0.0, "date": "2020-01-28" },
+      { "value": 0.0, "date": "2020-01-27" },
+      { "value": 0.0, "date": "2020-01-26" },
+      { "value": 0.0, "date": "2020-01-25" },
+      { "value": 0.0, "date": "2020-01-24" },
+      { "value": 1.37, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "weather", "label": "Weather", "priority": 9 },
+    "attribute": "weather_air_pressure",
+    "label": "Air pressure",
+    "private": false,
+    "priority": 8,
+    "value_type": 0,
+    "value_type_description": "Integer",
+    "service": "Dark Sky",
+    "values": [
+      { "value": 1010, "date": "2020-01-30" },
+      { "value": 1016, "date": "2020-01-29" },
+      { "value": 1015, "date": "2020-01-28" },
+      { "value": 1015, "date": "2020-01-27" },
+      { "value": 1013, "date": "2020-01-26" },
+      { "value": 1013, "date": "2020-01-25" },
+      { "value": 1011, "date": "2020-01-24" },
+      { "value": 1000, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "weather", "label": "Weather", "priority": 9 },
+    "attribute": "weather_cloud_cover",
+    "label": "Cloud cover",
+    "private": false,
+    "priority": 8,
+    "value_type": 5,
+    "value_type_description": "Percentage",
+    "service": "Dark Sky",
+    "values": [
+      { "value": 0.0, "date": "2020-01-30" },
+      { "value": 0.27, "date": "2020-01-29" },
+      { "value": 0.87, "date": "2020-01-28" },
+      { "value": 0.75, "date": "2020-01-27" },
+      { "value": 0.37, "date": "2020-01-26" },
+      { "value": 0.41, "date": "2020-01-25" },
+      { "value": 0.39, "date": "2020-01-24" },
+      { "value": 0.85, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "weather", "label": "Weather", "priority": 9 },
+    "attribute": "weather_humidity",
+    "label": "Humidity",
+    "private": false,
+    "priority": 8,
+    "value_type": 5,
+    "value_type_description": "Percentage",
+    "service": "Dark Sky",
+    "values": [
+      { "value": 0.36, "date": "2020-01-30" },
+      { "value": 0.61, "date": "2020-01-29" },
+      { "value": 0.68, "date": "2020-01-28" },
+      { "value": 0.7, "date": "2020-01-27" },
+      { "value": 0.78, "date": "2020-01-26" },
+      { "value": 0.62, "date": "2020-01-25" },
+      { "value": 0.59, "date": "2020-01-24" },
+      { "value": 0.76, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "weather", "label": "Weather", "priority": 9 },
+    "attribute": "weather_wind_speed",
+    "label": "Wind speed",
+    "private": false,
+    "priority": 8,
+    "value_type": 1,
+    "value_type_description": "Float",
+    "service": "Dark Sky",
+    "values": [
+      { "value": 2.85, "date": "2020-01-30" },
+      { "value": 1.58, "date": "2020-01-29" },
+      { "value": 1.94, "date": "2020-01-28" },
+      { "value": 2.49, "date": "2020-01-27" },
+      { "value": 2.67, "date": "2020-01-26" },
+      { "value": 2.05, "date": "2020-01-25" },
+      { "value": 3.13, "date": "2020-01-24" },
+      { "value": 5.02, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "weather", "label": "Weather", "priority": 9 },
+    "attribute": "day_length",
+    "label": "Day length",
+    "private": false,
+    "priority": 9,
+    "value_type": 3,
+    "value_type_description": "Period (min)",
+    "service": "Dark Sky",
+    "values": [
+      { "value": 845, "date": "2020-01-30" },
+      { "value": 847, "date": "2020-01-29" },
+      { "value": 848, "date": "2020-01-28" },
+      { "value": 850, "date": "2020-01-27" },
+      { "value": 853, "date": "2020-01-26" },
+      { "value": 854, "date": "2020-01-25" },
+      { "value": 856, "date": "2020-01-24" },
+      { "value": 858, "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "weather", "label": "Weather", "priority": 9 },
+    "attribute": "weather_summary",
+    "label": "Weather summary",
+    "private": false,
+    "priority": 9,
+    "value_type": 2,
+    "value_type_description": "String",
+    "service": "Dark Sky",
+    "values": [
+      { "value": "Clear throughout the day.", "date": "2020-01-30" },
+      { "value": "Clear throughout the day.", "date": "2020-01-29" },
+      { "value": "Overcast throughout the day.", "date": "2020-01-28" },
+      { "value": "Mostly cloudy throughout the day.", "date": "2020-01-27" },
+      { "value": "Partly cloudy throughout the day.", "date": "2020-01-26" },
+      { "value": "Partly cloudy throughout the day.", "date": "2020-01-25" },
+      { "value": "Partly cloudy throughout the day.", "date": "2020-01-24" },
+      { "value": "Rain in the morning and afternoon.", "date": "2020-01-23" }
+    ]
+  },
+  {
+    "group": { "name": "weather", "label": "Weather", "priority": 9 },
+    "attribute": "weather_icon",
+    "label": "Weather icon",
+    "private": false,
+    "priority": 10,
+    "value_type": 2,
+    "value_type_description": "String",
+    "service": "Dark Sky",
+    "values": [
+      { "value": "clear-day", "date": "2020-01-30" },
+      { "value": "clear-day", "date": "2020-01-29" },
+      { "value": "partly-cloudy-day", "date": "2020-01-28" },
+      { "value": "partly-cloudy-day", "date": "2020-01-27" },
+      { "value": "partly-cloudy-day", "date": "2020-01-26" },
+      { "value": "partly-cloudy-day", "date": "2020-01-25" },
+      { "value": "partly-cloudy-day", "date": "2020-01-24" },
+      { "value": "rain", "date": "2020-01-23" }
+    ]
+  }
+]

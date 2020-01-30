@@ -1,0 +1,139 @@
+{
+  "response": {
+    "total_count": 12,
+    "games": [
+      {
+        "appid": 1145360,
+        "name": "Hades",
+        "playtime_2weeks": 1270,
+        "playtime_forever": 6551,
+        "img_icon_url": "8a3fca36a00883e8066263ad35dd15d77a1f9abc",
+        "img_logo_url": "5ecbbbefe9349cb2ef1ef4d2e3a0c111055aadf5",
+        "playtime_windows_forever": 6551,
+        "playtime_mac_forever": 0,
+        "playtime_linux_forever": 0
+      },
+      {
+        "appid": 570,
+        "name": "Dota 2",
+        "playtime_2weeks": 732,
+        "playtime_forever": 296435,
+        "img_icon_url": "0bbb630d63262dd66d2fdd0f7d37e8661a410075",
+        "img_logo_url": "d4f836839254be08d8e9dd333ecc9a01782c26d2",
+        "playtime_windows_forever": 7500,
+        "playtime_mac_forever": 26,
+        "playtime_linux_forever": 0
+      },
+      {
+        "appid": 632360,
+        "name": "Risk of Rain 2",
+        "playtime_2weeks": 392,
+        "playtime_forever": 921,
+        "img_icon_url": "f5d0150f7ab9e51e9d2fadd97ddf5419f70d86c1",
+        "img_logo_url": "9c4c301f11f64239393f88ee7a84582e3f2cecd7",
+        "playtime_windows_forever": 662,
+        "playtime_mac_forever": 0,
+        "playtime_linux_forever": 0
+      },
+      {
+        "appid": 548430,
+        "name": "Deep Rock Galactic",
+        "playtime_2weeks": 229,
+        "playtime_forever": 1325,
+        "img_icon_url": "e033e23c29a192a17c16a7645a2b423ac64ff447",
+        "img_logo_url": "c2b3d9b2a3df9bf3084c5363bb4412ecd3877f89",
+        "playtime_windows_forever": 1308,
+        "playtime_mac_forever": 0,
+        "playtime_linux_forever": 0
+      },
+      {
+        "appid": 323320,
+        "name": "Grow Home",
+        "playtime_2weeks": 148,
+        "playtime_forever": 187,
+        "img_icon_url": "acd05186b5f70b1007745f38cb30c7be5488cb5d",
+        "img_logo_url": "f4b4226f4715ca8e68c8ed4ddbbe3adb0cc5f8ab",
+        "playtime_windows_forever": 148,
+        "playtime_mac_forever": 0,
+        "playtime_linux_forever": 0
+      },
+      {
+        "appid": 1085660,
+        "name": "Destiny 2",
+        "playtime_2weeks": 127,
+        "playtime_forever": 127,
+        "img_icon_url": "fce050d63f0a2f8eb51b603c7f30bfca2a301549",
+        "img_logo_url": "b9a077dc30e517f71df3b07f4456f87a88810ab9",
+        "playtime_windows_forever": 127,
+        "playtime_mac_forever": 0,
+        "playtime_linux_forever": 0
+      },
+      {
+        "appid": 250680,
+        "name": "BELOW",
+        "playtime_2weeks": 81,
+        "playtime_forever": 188,
+        "img_icon_url": "106d9b3425118196cc39198e884ce0f8613ebe6e",
+        "img_logo_url": "74f0f128b4981e03509c3a54925e5ac9167b2098",
+        "playtime_windows_forever": 81,
+        "playtime_mac_forever": 0,
+        "playtime_linux_forever": 0
+      },
+      {
+        "appid": 1200860,
+        "name": "The Good Time Garden",
+        "playtime_2weeks": 30,
+        "playtime_forever": 30,
+        "img_icon_url": "ae2ef6e3a1f87e6c98028021eca3bbb576c9b838",
+        "img_logo_url": "f6c1033bd88dff1fbb0f47360300d437b3cc5bc4",
+        "playtime_windows_forever": 30,
+        "playtime_mac_forever": 0,
+        "playtime_linux_forever": 0
+      },
+      {
+        "appid": 437570,
+        "name": "GoNNER",
+        "playtime_2weeks": 28,
+        "playtime_forever": 67,
+        "img_icon_url": "337e12b8e8bd8c99624d4ca17dd526b0c24038d7",
+        "img_logo_url": "6283a6011bba40f16397108ef1ae4de5d2faefd9",
+        "playtime_windows_forever": 28,
+        "playtime_mac_forever": 0,
+        "playtime_linux_forever": 0
+      },
+      {
+        "appid": 994140,
+        "name": "Lightmatter",
+        "playtime_2weeks": 9,
+        "playtime_forever": 9,
+        "img_icon_url": "3e9eabd187e5caa4823067cd476f34ac11a6614c",
+        "img_logo_url": "3e6eaf98227eecb683df6fc64285b3213a7418f2",
+        "playtime_windows_forever": 9,
+        "playtime_mac_forever": 0,
+        "playtime_linux_forever": 0
+      },
+      {
+        "appid": 494430,
+        "name": "Praey for the Gods",
+        "playtime_2weeks": 5,
+        "playtime_forever": 5,
+        "img_icon_url": "0f0be9d92550a9664c1dc842d5fb09db70ee6cd6",
+        "img_logo_url": "477c76e8a017a0bacbb09c16391f546cb0648464",
+        "playtime_windows_forever": 5,
+        "playtime_mac_forever": 0,
+        "playtime_linux_forever": 0
+      },
+      {
+        "appid": 861540,
+        "name": "Dicey Dungeons",
+        "playtime_2weeks": 1,
+        "playtime_forever": 40,
+        "img_icon_url": "5a07e59d3eb120e2d7a2f38e480d78c4d0aa4843",
+        "img_logo_url": "9667c769c353365708e7beb2e929828d6fdebef9",
+        "playtime_windows_forever": 40,
+        "playtime_mac_forever": 0,
+        "playtime_linux_forever": 0
+      }
+    ]
+  }
+}
