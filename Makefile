@@ -18,7 +18,7 @@ run-bundle:
 		const lmklol = require('./index').lmklol; \
 		(async () => { \
 			const out = await lmklol(); \
-			console.log({ out }); \
+			console.log(JSON.stringify(out, null, 2)); \
 		})() \
 	"
 

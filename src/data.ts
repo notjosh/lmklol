@@ -47,7 +47,7 @@ const data = async (): Promise<Data> => {
   if (lastfm == null) {
     try {
       const lastfmy: any = await http(
-        `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${process.env.LASTFM_USERNAME}&api_key=${process.env.LASTFM_API_KEY}&format=json`
+        `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&extended=1&user=${process.env.LASTFM_USERNAME}&api_key=${process.env.LASTFM_API_KEY}&format=json`
       ).json();
       // const lastfmy: any = require('../samples/lastfm.json');
 

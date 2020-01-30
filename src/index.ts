@@ -74,11 +74,17 @@ const lmklol = async () => {
     ) {
       const track = data.lastfm.recenttracks.track[0];
 
-      if (track.name != null) {
-        points.song_name = track.name;
+      if (track != null) {
+        points.song = {
+          name: track.name,
+          url: track.url,
+        };
 
-        if (track.artist != null && track.artist['#text'] != null) {
-          points.song_artist = track.artist['#text'];
+        if (track.artist != null) {
+          points.song.artist = {
+            name: track.artist.name,
+            url: track.artist.url,
+          };
         }
       }
     }
@@ -187,20 +193,28 @@ const lmklol = async () => {
   words += '</a>. ';
 
   if (
-    points.song_name != null ||
+    points.song != null ||
     points.watched != null ||
     (points.steam_game_name != null && points.steam_game_appid != null)
   ) {
     let lines: string[] = [];
 
-    if (points.song_name != null) {
-      let line = `the last song i listened to was <a target="_blank" data-background="05lol.gif" href="https://www.last.fm/user/lemikizu">${points.song_name}`;
+    if (points.song != null) {
+      let line = `the last song i listened to was <a target="_blank" data-background="05lol.gif" href="${points
+        .song.url || 'https://www.last.fm/user/lemikizu'}">${
+        points.song.name
+      }</a>`;
 
-      if (points.song_artist != null) {
-        line += ` by ${points.song_artist}`;
+      if (points.song.artist != null) {
+        let link_pre = '';
+        let link_post = '';
+
+        if (points.song.artist.url != null) {
+          link_pre = `<a target="_blank" data-background="14lol.gif" href="${points.song.artist.url}">`;
+          link_post = '</a>';
+        }
+        line += ` by ${link_pre}${points.song.artist.name}${link_post}`;
       }
-
-      line += '</a>';
 
       lines.push(line);
     }
