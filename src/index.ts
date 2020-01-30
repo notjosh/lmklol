@@ -286,7 +286,7 @@ const lmklol = async () => {
     }
 
     if (points.steps_formatted != null) {
-      words += `i took <a style="cursor:default;" data-background="06lol.gif">${points.steps_formatted}</a> steps`;
+      words += `i took <a style="cursor:default;" data-background="06lol.gif">${points.steps_formatted} steps</a>`;
 
       if (points.sleep_in_words != null) {
         words += ' ';
