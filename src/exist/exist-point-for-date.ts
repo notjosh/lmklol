@@ -5,6 +5,10 @@ export default (
   attribute: string,
   date: string
 ): ExistDataPointValue => {
+  if (exist == null) {
+    return null;
+  }
+
   const bits = exist.filter(bit => bit.attribute === attribute);
 
   if (bits.length === 0) {
