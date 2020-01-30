@@ -187,17 +187,11 @@ const lmklol = async () => {
   words += '</a>. ';
 
   if (
-    points.productivity != null ||
     points.song_name != null ||
-    points.watched != null
+    points.watched != null ||
+    (points.steam_game_name != null && points.steam_game_appid != null)
   ) {
     let lines: string[] = [];
-
-    if (points.productivity != null) {
-      lines.push(
-        `i was <a style="cursor:default;" data-background="03lol.gif">${points.productivity}% productive</a> yesterday`
-      );
-    }
 
     if (points.song_name != null) {
       let line = `the last song i listened to was <a target="_blank" data-background="05lol.gif" href="https://www.last.fm/user/lemikizu">${points.song_name}`;
@@ -237,24 +231,42 @@ const lmklol = async () => {
     }
   }
 
-  if (points.steps_formatted != null || points.sleep_in_words != null) {
-    words += 'i apparently ';
-  }
+  // todo
+  // yesterday
+  if (
+    points.productivity != null ||
+    points.steps_formatted != null ||
+    points.sleep_in_words != null
+  ) {
+    words += 'yesterday ';
 
-  if (points.steps_formatted != null) {
-    words += `took <a style="cursor:default;" data-background="06lol.gif">${points.steps_formatted}</a> steps`;
-  }
+    if (points.productivity != null) {
+      words += `i was <a style="cursor:default;" data-background="03lol.gif">${points.productivity}% productive</a>`;
 
-  if (points.sleep_in_words != null) {
-    if (points.steps_formatted != null) {
-      words += ' then ';
+      if (points.steps_formatted != null) {
+        words += ' and ';
+      }
     }
 
-    words += `slept for <a style="cursor:default;" data-background="07lol.gif">${points.sleep_in_words}</a>`;
-  }
+    if (points.steps_formatted != null) {
+      words += `i took <a style="cursor:default;" data-background="06lol.gif">${points.steps_formatted}</a> steps`;
 
-  if (points.steps_formatted != null || points.sleep_in_words != null) {
-    words += '. ';
+      if (points.sleep_in_words != null) {
+        words += ' ';
+      }
+    }
+
+    if (points.sleep_in_words != null) {
+      if (points.steps_formatted == null && points.productivity == null) {
+        words += 'i slept';
+      } else {
+        words += 'before sleeping';
+      }
+
+      words += ` for <a style="cursor:default;" data-background="07lol.gif">${points.sleep_in_words}</a>`;
+    }
+
+    words += '.';
   }
 
   words = words.trimEnd();
@@ -268,4 +280,15 @@ const lmklol = async () => {
   return out;
 };
 
-export default lmklol;
+const handler = async (event: any = {}): Promise<any> => {
+  const body = await lmklol();
+  return {
+    statusCode: 200,
+    body: JSON.stringify(body),
+    headers: {
+      'content-type': 'application/json',
+    },
+  };
+};
+
+export { lmklol, handler };

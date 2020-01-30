@@ -2,6 +2,10 @@
 
 it's _5:39pm_ here in _melbourne_, which is currently _12° and raining_. i was _54% productive_ yesterday, the last song i listened to was _PONPONPON_ and the last thing i watched was _Game of Thrones_. i apparently took _3,019 steps_ then slept for _six hours_. also all these api calls are broken LUL.
 
+it’s \<time\> here in melbourne, which is currently \<temperature\> and \<weather-description\>. the last song i listened to was \<song\> by \<artist\>, the last thing i watched was \<trakt\> and the last game i played was \<steam\>. yesterday i was \<productivity\> productive and i took \<stepcount\> steps before sleeping for \<sleep\>.
+
+it's 12:45am here in Melbourne. i was 19% productive yesterday, the last song i listened to was Smoke On The Water (Remastered) by Deep Purple, the last thing i watched was The Office, and the last game i played was Hades. i apparently took 118 steps.
+
 ## Data
 
 ### Time

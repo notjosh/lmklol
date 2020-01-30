@@ -1,6 +1,6 @@
 #!/bin/ts-node
 
-import lmklol from '../src';
+import { lmklol } from '../src';
 
 (async () => {
   const out = await lmklol();
