@@ -230,7 +230,7 @@ const lmklol = async () => {
         let link_post = '';
 
         if (points.song.artist.url != null) {
-          link_pre = `<a target="_blank" data-background="14lol.gif" href="${points.song.artist.url}">`;
+          link_pre = `<a target="_blank" data-background="05lol.gif" href="${points.song.artist.url}">`;
           link_post = '</a>';
         }
         line += ` by ${link_pre}${points.song.artist.name}${link_post}`;
@@ -250,7 +250,7 @@ const lmklol = async () => {
 
     if (points.steam_game_name != null && points.steam_game_appid != null) {
       lines.push(
-        `the last game i played was <a target="_blank" data-background="14lol.gif" href="https://store.steampowered.com/app/${points.steam_game_appid}/">${points.steam_game_name}</a>`
+        `the last game i played was <a target="_blank" data-background="13lol.gif" href="https://store.steampowered.com/app/${points.steam_game_appid}/">${points.steam_game_name}</a>`
       );
     }
 
