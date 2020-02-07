@@ -1,7 +1,10 @@
+import { promises as fsp } from 'fs';
 import got from 'got';
 import Keyv from 'keyv';
 import KeyvFile from 'keyv-file';
 import { ExistData } from './exist/types';
+
+import steam_html2json from './steam/steam-html2json';
 
 export type Data = {
   exist: ExistData[];
@@ -79,16 +82,30 @@ const data = async (): Promise<Data> => {
     }
   }
 
-  let steam: any = (await keyv.get('steam')) as any;
+  let steam: any = (await keyv.get('steamhtml')) as any;
   if (steam == null) {
     try {
-      const steamy: any = await http(
-        `https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=${process.env.STEAM_API_KEY}&steamid=${process.env.STEAM_USER_ID}&format=json`
-      ).json();
-      // const steamy: any = require('../samples/steam.json');
+      const { body: steamy } = await http(
+        `https://steamcommunity.com/id/${process.env.STEAM_USERNAME}`,
+        {
+          // try to look like a browser, maybe
+          headers: {
+            'User-Agent':
+              'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:72.0) Gecko/20100101 Firefox/72.0',
+            Accept:
+              'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+            'Accept-Language': 'en-AU,en;q=0.5',
+            DNT: '1',
+            'Upgrade-Insecure-Requests': '1',
+          },
+        }
+      );
+      // const steamy: any = await fsp.readFile('../samples/steam.html', 'utf-8');
 
-      await keyv.set('steam', steamy, 1000 * 60); // 1 minute
-      steam = steamy;
+      const steamyjson = steam_html2json(steamy);
+
+      await keyv.set('steamhtml', steamyjson, 1000 * 60); // 1 minute
+      steam = steamyjson;
     } catch (error) {
       console.error('error fetching steam:', error);
     }
