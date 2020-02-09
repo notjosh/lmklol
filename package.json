@@ -6,19 +6,25 @@
   "scripts": {},
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-json": "^4.0.2",
     "@rollup/plugin-node-resolve": "^7.0.0",
+    "@types/cheerio": "^0.22.16",
     "@types/humanize-duration": "^3.18.0",
+    "@types/jest": "^25.1.2",
     "@types/luxon": "^1.21.0",
     "@types/node": "^13.1.8",
     "@types/numeral": "^0.0.26",
     "builtin-modules": "^3.1.0",
+    "jest": "^25.1.0",
     "prettier": "^1.19.1",
     "rollup": "^1.30.1",
     "rollup-plugin-typescript2": "^0.25.3",
+    "ts-jest": "^25.2.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
     "dotenv": "^8.2.0",
     "got": "^10.3.0",
     "humanize-duration": "^3.21.0",
@@ -27,5 +33,8 @@
     "luxon": "^1.22.0",
     "numeral": "^2.0.6",
     "supports-color": "^7.1.0"
+  },
+  "resolutions": {
+    "htmlparser2": "4.0.0"
   }
 }
