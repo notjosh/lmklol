@@ -270,21 +270,9 @@ const lmklol = async () => {
 
   // todo
   // yesterday
-  if (
-    points.productivity != null ||
-    points.steps_formatted != null ||
-    points.sleep_in_words != null
-  ) {
+  if (points.steps_formatted != null || points.sleep_in_words != null) {
     words += 'yesterday ';
-/*
-    if (points.productivity != null) {
-      words += `i was <a style="cursor:default;" data-background="03lol.gif">${points.productivity}% productive</a>`;
 
-      if (points.steps_formatted != null) {
-        words += ' and ';
-      }
-    }
-*/
     if (points.steps_formatted != null) {
       words += `i took <a style="cursor:default;" data-background="06lol.gif">${points.steps_formatted} steps</a>`;
 
@@ -294,7 +282,7 @@ const lmklol = async () => {
     }
 
     if (points.sleep_in_words != null) {
-      if (points.steps_formatted == null && points.productivity == null) {
+      if (points.steps_formatted == null) {
         words += 'i slept';
       } else {
         words += 'before sleeping';
