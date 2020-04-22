@@ -8,6 +8,14 @@ import fetchdata from './data';
 
 import existPointForDate from './exist/exist-point-for-date';
 
+const trimEnd = (string: string): string => {
+  /* eslint-disable no-control-regex */
+  var endWhitespace = /[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]*$/;
+  /* eslint-enable no-control-regex */
+
+  return string.replace(endWhitespace, '');
+};
+
 const lmklol = async () => {
   const data = await fetchdata();
 
@@ -220,10 +228,9 @@ const lmklol = async () => {
     let lines: string[] = [];
 
     if (points.song != null) {
-      let line = `the last song i listened to was <a target="_blank" data-background="05lol.gif" href="${points
-        .song.url || 'https://www.last.fm/user/lemikizu'}">${
-        points.song.name
-      }</a>`;
+      let line = `the last song i listened to was <a target="_blank" data-background="05lol.gif" href="${
+        points.song.url || 'https://www.last.fm/user/lemikizu'
+      }">${points.song.name}</a>`;
 
       if (points.song.artist != null) {
         let link_pre = '';
@@ -241,10 +248,9 @@ const lmklol = async () => {
 
     if (points.watched != null) {
       lines.push(
-        `the last thing i watched was <a target="_blank" data-background="14lol.gif" href="${points
-          .watched.url || 'https://trakt.tv/users/lmk'}">${
-          points.watched.title
-        }</a>`
+        `the last thing i watched was <a target="_blank" data-background="14lol.gif" href="${
+          points.watched.url || 'https://trakt.tv/users/lmk'
+        }">${points.watched.title}</a>`
       );
     }
 
@@ -294,7 +300,7 @@ const lmklol = async () => {
     words += '.';
   }
 
-  words = words.trimEnd();
+  words = trimEnd(words);
 
   const out = {
     points,

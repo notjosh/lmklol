@@ -48,16 +48,17 @@ const data = async (): Promise<Data> => {
 
   let lastfm: any = (await keyv.get('lastfm')) as any;
   if (lastfm == null) {
+    const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&extended=1&user=${process.env.LASTFM_USERNAME}&api_key=${process.env.LASTFM_API_KEY}&format=json`;
+
     try {
-      const lastfmy: any = await http(
-        `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&extended=1&user=${process.env.LASTFM_USERNAME}&api_key=${process.env.LASTFM_API_KEY}&format=json`
-      ).json();
+      const lastfmy: any = await http(url).json();
       // const lastfmy: any = require('../samples/lastfm.json');
 
       await keyv.set('lastfm', lastfmy, 1000 * 60); // 1 minute
       lastfm = lastfmy;
     } catch (error) {
       console.error('error fetching lastfm:', error);
+      console.error(`via: ${url}`);
     }
   }
 
