@@ -116,7 +116,7 @@ const lmklol = async () => {
     if (watchable.movie != null) {
       title = watchable.movie.title;
 
-      if (watchable.show.ids != null) {
+      if (watchable.movie.ids != null) {
         url = traktor(watchable.movie.ids.slug);
       }
     }
