@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "test": "yarn jest"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.1",
     "@rollup/plugin-json": "^4.0.2",
