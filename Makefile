@@ -33,4 +33,4 @@ invoke:
 	cat response.json | jq
 
 invoke-https:
-	curl https://0ww5j4iroa.execute-api.eu-central-1.amazonaws.com/lmklol | jq
+	curl https://tccvmutw71.execute-api.eu-central-1.amazonaws.com/lmklol | jq
