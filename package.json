@@ -33,7 +33,7 @@
     "humanize-duration": "^3.21.0",
     "keyv": "^4.0.0",
     "keyv-file": "^0.1.13",
-    "luxon": "^1.22.0",
+    "luxon": "^2.5.2",
     "numeral": "^2.0.6",
     "supports-color": "^7.1.0"
   },
